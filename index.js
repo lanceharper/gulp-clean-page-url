@@ -15,9 +15,9 @@ function gulpCleanPageUrl(opts) {
       // do nothing if no contents
     }
 
-		if (file.isStream()) {
-			cb(new gutil.PluginError('gulp-clean-url', 'Streaming not supported'));
-			return;
+    if (file.isStream()) {
+    	cb(new gutil.PluginError('gulp-clean-url', 'Streaming not supported'));
+    	return;
     }
 
     try {
